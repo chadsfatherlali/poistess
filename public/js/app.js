@@ -6,5 +6,9 @@
 
 function AppCtrl ($scope) {}
 
-var app = angular.module('StarterApp', ['ngMaterial']);
+var app = angular.module('StarterApp', [
+     'ngMaterial',
+     'ngMap'
+]);
+
 app.controller('AppCtrl', ['$scope', AppCtrl]);
