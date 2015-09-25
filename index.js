@@ -7,6 +7,7 @@ var express = require('express'),
      app = express();
 
 app.set('port', (process.env.PORT || 5000));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static(__dirname + '/public'));
 app.engine('html', swig.renderFile);
 app.set('views', __dirname + '/views');
