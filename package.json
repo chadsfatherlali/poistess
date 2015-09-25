@@ -1,0 +1,15 @@
+{
+  "name": "poistess",
+  "version": "1.0.0",
+  "description": "Puntos de venta para TESS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santiago Sánchez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "swig": "^1.4.2"
+  }
+}
