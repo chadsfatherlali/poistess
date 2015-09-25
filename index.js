@@ -16,7 +16,7 @@ app.set('view cache', false);
 app.get('/', function(request, response) {
      var obj = {
           'msg': 'Hola',
-          'name': 'Santiago'
+          'name': 'Anni'
      }
 
      response.render('pages/index', obj);
