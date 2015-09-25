@@ -14,7 +14,12 @@ app.set('view engine', 'html');
 app.set('view cache', false);
 
 app.get('/', function(request, response) {
-     response.render('pages/index', {vars: {test: 'SANTIAGO'}});
+     var obj = {
+          'msg': 'Hola',
+          'name': 'Santiago'
+     }
+
+     response.render('pages/index', obj);
 });
 
 app.listen(app.get('port'), function() {
