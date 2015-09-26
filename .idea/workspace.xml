@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e13e4e5-a001-4a16-9863-d533be8095bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css.map" afterPath="$PROJECT_DIR$/public/css/common.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css" afterPath="$PROJECT_DIR$/public/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.scss" afterPath="$PROJECT_DIR$/public/css/common.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/index.html" afterPath="$PROJECT_DIR$/views/pages/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -55,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,8 +69,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.32">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.52">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -283,7 +278,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443219513825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se implemento gmaps y puntos">
+      <created>1443227178696</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1443227178696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -351,7 +352,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se implemento git en webstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implemento git en webstorm" />
+    <MESSAGE value="Se implemento gmaps y puntos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implemento gmaps y puntos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -472,6 +474,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -480,18 +490,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.32">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.52">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
