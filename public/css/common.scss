@@ -16,3 +16,23 @@ html, body {
     height: 100%;
   }
 }
+
+info-window {
+  p {
+    line-height: 0;
+  }
+}
+
+#directions-panel {
+  position: absolute;
+  z-index: 9999;
+  background: white;
+  font-size: 0.8em;
+  width: 40%;
+}
+
+footer {
+  svg {
+    stroke: white;
+  }
+}

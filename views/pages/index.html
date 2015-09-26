@@ -29,10 +29,46 @@
 
     <div id="map" map-lazy-load="http://maps.google.com/maps/api/js" map-type="">
         <map zoom="7" center="-1.7864639, -78.1368874">
-            <marker position="-0.1771298, -78.4850934"></marker>
-            <marker position="-0.1759739, -78.4855775"></marker>
-            <marker position="-0.2944735, -78.540056"></marker>
+            <div ng-repeat="oficina in oficinas">
+                <marker id="oficina-[[ $index ]]"  position="[[ oficina.geo ]]" on-click="showInfoWindow(event, 'info-[[ $index ]]')"></marker>
+                <info-window id="info-[[ $index ]]" visible-on-marker="oficina-[[ $index ]]">
+                    <div ng-non-bindable="">
+                        <header>
+                            <h2>[[ oficina.nombre ]]</h2>
+                            <h3>[[ oficina.localidad ]]</h3>
+                        </header>
+                        <section>
+                            <div><strong>Nombre:</strong> [[ oficina.nombre ]]</div>
+                            <div><strong>Dirección:</strong> [[ oficina.direccion ]]</div>
+                            <div><strong>Teléfono:</strong> [[ oficina.telefono ]]</div>
+                            <div><strong>Email:</strong> [[ oficina.email ]]</div>
+                        </section>
+                        <footer>
+                            <h3>Como llegar:</h3>
+                            <md-button class="md-fab md-warn" aria-label="Use Android">
+                                <md-icon md-svg-src="/svg/bicycle.svg"></md-icon>
+                            </md-button>
+                            <md-button class="md-fab md-warn" aria-label="Use Android">
+                                <md-icon md-svg-src="/svg/bus.svg"></md-icon>
+                            </md-button>
+                            <md-button class="md-fab md-warn" aria-label="Use Android">
+                                <md-icon md-svg-src="/svg/car.svg"></md-icon>
+                            </md-button>
+                        </footer>
+                    </div>
+                </info-window>
+            </div>
+
+            <directions
+                    draggable="true"
+                    panel="directions-panel"
+                    travel-mode="DRIVING"
+                    origin="Polit Lasso, Conocoto, Pichincha, Ecuador"
+                    destination="Av. AMAZONAS N36-152 Y Av. NACIONES UNIDAS">
+            </directions>
         </map>
     </div>
+
+    <div id="directions-panel"></div>
 </body>
 </html>
