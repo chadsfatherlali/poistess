@@ -23,17 +23,15 @@
 </head>
 
 <body ng-controller="AppCtrl">
-    <md-toolbar>
-        <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Settings">
-                <md-icon md-svg-icon="/bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg"></md-icon>
-            </md-button>
-        </div>
-    </md-toolbar>
+    <md-button id="menu-button" class="md-fab md-primary" aria-label="Menu">
+        <md-icon md-svg-src="/bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg"></md-icon>
+    </md-button>
 
     <div id="map" map-lazy-load="http://maps.google.com/maps/api/js" map-type="">
         <map zoom="7" center="-1.7864639, -78.1368874">
-            <map-type name="coordinate" object="coordinateMapType"></map-type>
+            <marker position="-0.1771298, -78.4850934"></marker>
+            <marker position="-0.1759739, -78.4855775"></marker>
+            <marker position="-0.2944735, -78.540056"></marker>
         </map>
     </div>
 </body>

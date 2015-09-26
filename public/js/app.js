@@ -4,11 +4,16 @@
 
 'use strict';
 
-function AppCtrl ($scope) {}
-
 var app = angular.module('StarterApp', [
      'ngMaterial',
      'ngMap'
 ]);
+
+app.config(['$interpolateProvider', function ($interpolateProvider) {
+     $interpolateProvider.startSymbol('[[').endSymbol(']]');
+}]);
+
+function AppCtrl ($scope) {
+}
 
 app.controller('AppCtrl', ['$scope', AppCtrl]);
