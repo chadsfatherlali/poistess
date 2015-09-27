@@ -44,7 +44,6 @@ function map (parseGeoPoints) {
                mapZoom: '@zoom'
           },
           template: function (element, attrs) {
-               console.log('attrs', attrs);
                return '<div ' + attrs.id + '></div>';
           },
           link: function(scope, element, attrs) {
