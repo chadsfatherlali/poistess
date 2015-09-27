@@ -15,7 +15,7 @@ function parseGeoPoints ($http, $q, $log) {
           parse: function (value) {
                var deferred = $q.defer();
 
-               $http.get('http://maps.google.com/maps/api/geocode/json?address=' + value + '&sensor=false')
+               $http.get('https://maps.google.com/maps/api/geocode/json?address=' + value + '&sensor=false')
                     .success(function (data) {
                          deferred.resolve(data);
                     })
