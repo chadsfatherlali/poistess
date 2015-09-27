@@ -44,22 +44,25 @@ function map ($rootScope, parseGeoPoints) {
                mapWidth: '@width',
                mapZoom: '@zoom'
           },
+          template: function (element, attrs) {
+               console.log('attrs', attrs);
+               return '<div ' + attrs.id + '></div>';
+          },
           link: function(scope, element, attrs) {
-               var height = scope.mapHeight || '300px';
-               var width = scope.mapWidth || '500px';
-               var zoom = scope.mapZoom || 7;
+               var height = scope.mapHeight || '300px',
+                    width = scope.mapWidth || '500px',
+                    zoom = scope.mapZoom || 7,
+                    el = document.getElementById(attrs.id);
 
-               $rootScope.el = element[0];
-
-               $rootScope.el.style.display = 'block';
-               $rootScope.el.style.height = height;
-               $rootScope.el.style.width = width;
+               el.style.display = 'block';
+               el.style.height = height;
+               el.style.width = width;
 
                parseGeoPoints.parse(scope.mapPoints).then(function (data) {
-                    var latlng = data.results;
-                    var lastPoint = latlng.length - 1;
+                    var latlng = data.results,
+                         lastPoint = latlng.length - 1;
 
-                    new google.maps.Map($rootScope.el, {
+                    new google.maps.Map(el, {
                          center: {
                               lat: latlng[lastPoint].geometry.location.lat,
                               lng: latlng[lastPoint].geometry.location.lng
