@@ -81,4 +81,4 @@ function map (parseGeoPoints) {
  */
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
-     .directive('map', ['$rootScope', 'parseGeoPoints', map]);
+     .directive('map', ['parseGeoPoints', map]);
