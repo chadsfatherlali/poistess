@@ -32,9 +32,10 @@ function parseGeoPoints ($http, $q, $log) {
  * Directiva que se encarga de renderizar el mapa
  *
  * @param parseGeoPoints
- * @returns {{restrict: string, scope: {mapPoints: string, mapHeight: string, mapWidth: string, mapZoom: string}, link: Function}}
+ * @param $rootScope
+ * @returns {{restrict: string, scope: {mapPoints: string, mapHeight: string, mapWidth: string, mapZoom: string}, template: Function, link: Function}}
  */
-function map (parseGeoPoints) {
+function map (parseGeoPoints, $rootScope) {
      return {
           restrict: 'E',
           scope: {
@@ -44,9 +45,10 @@ function map (parseGeoPoints) {
                mapZoom: '@zoom'
           },
           template: function (element, attrs) {
-               return '<div ' + attrs.id + '></div>';
+               return '<div id="' + attrs.id + '"></div>';
           },
-          link: function(scope, element, attrs) {
+          transclude: true,
+          link: function(scope, element, attrs, ctrl, transclude) {
                var height = scope.mapHeight || '300px',
                     width = scope.mapWidth || '500px',
                     zoom = scope.mapZoom || 7,
@@ -57,16 +59,47 @@ function map (parseGeoPoints) {
                el.style.width = width;
 
                parseGeoPoints.parse(scope.mapPoints).then(function (data) {
-                    var latlng = data.results,
-                         lastPoint = latlng.length - 1;
+                    var latlng = data.results;
 
-                    new google.maps.Map(el, {
+                    $rootScope.map = new google.maps.Map(el, {
                          center: {
-                              lat: latlng[lastPoint].geometry.location.lat,
-                              lng: latlng[lastPoint].geometry.location.lng
+                              lat: latlng[0].geometry.location.lat,
+                              lng: latlng[0].geometry.location.lng
                          },
                          scrollwheel: true,
                          zoom: zoom
+                    });
+
+                    element.append(transclude());
+               });
+          }
+     }
+}
+
+/**
+ * Directiva que pinta los puntos en el mapa.
+ *
+ * @param parseGeoPoints
+ * @param $rootScope
+ * @returns {{restrict: string, scope: {markerPoints: string}, link: Function}}
+ */
+function marker (parseGeoPoints, $rootScope) {
+     return {
+          restrict: 'E',
+          scope: {
+               markerPoints: '@points'
+          },
+          link: function(scope, element, attrs) {
+               parseGeoPoints.parse(scope.markerPoints).then(function (data) {
+                    var latlng = data.results;
+
+                    $rootScope.marker = new google.maps.Marker({
+                         position: {
+                              lat: latlng[0].geometry.location.lat,
+                              lng: latlng[0].geometry.location.lng
+                         },
+                         map: $rootScope.map,
+                         title: 'Hello World!'
                     });
                });
           }
@@ -80,4 +113,5 @@ function map (parseGeoPoints) {
  */
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
-     .directive('map', ['parseGeoPoints', map]);
+     .directive('map', ['parseGeoPoints', '$rootScope', map])
+     .directive('marker', ['parseGeoPoints', '$rootScope', marker]);

@@ -29,7 +29,13 @@
         <md-icon md-svg-src="/bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg"></md-icon>
     </md-button>
 
-    <map id="map" points="Ecuador" width="100%" height="100%"></map>
+    <map id="map" points="Ecuador" width="100%" height="100%">
+        <div ng-repeat="oficina in oficinas">
+            <div ng-repeat="local in oficina.centros">
+                <marker points="[[ local.geo ]]"></marker>
+            </div>
+        </div>
+    </map>
 
     <!-- <div id="map" map-lazy-load="http://maps.google.com/maps/api/js" map-type="">
         <map zoom="7" center="-1.7864639, -78.1368874">
