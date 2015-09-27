@@ -2,9 +2,385 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e13e4e5-a001-4a16-9863-d533be8095bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/svg/bicycle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/svg/bus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/svg/car.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/angularMapModule.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/app.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/Attr2Options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/GeoCoder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/MapController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NavigatorGeolocation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/StreetView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/bicycling-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/cloud-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/css/jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/css/prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/css/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/custom-control.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/directions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/drawing-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/dynamic-maps-engine-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Bold-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Bold-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Italic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Italic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Italic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Light-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Light-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fonts/OpenSans-Regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fusion-tables-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/heatmap-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/info-window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/js/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/js/prettify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/kml-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-lazy-load.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-type.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/maps-engine-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngMap.map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngmap.custom-marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/overlay-map-type.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/places-auto-complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/shape.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/Attr2Options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/GeoCoder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/MapController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NavigatorGeolocation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/StreetView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/bicycling-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/cloud-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/custom-control.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/directions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/drawing-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/dynamic-maps-engine-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/fusion-tables-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/heatmap-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/info-window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/kml-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-lazy-load.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-type.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/maps-engine-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngMap.map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngmap.custom-marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/overlay-map-type.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/places-auto-complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/shape.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/streetview-panorama.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/traffic-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/transit-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/weather-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/streetview-panorama.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/traffic-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/transit-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/weather-layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.debug.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.min.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/plugins/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/plugins/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/publish.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/linenumber.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/linenumber.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/lang-css.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/prettify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/styles/jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/styles/prettify-jsdoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/styles/prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/container.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/details.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/example.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/examples.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/exceptions.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/layout.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/mainpage.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/members.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/method.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/params.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/properties.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/returns.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/source.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/tutorial.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/type.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/karma.conf.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/protractor.conf.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/bicycling-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/bicycling-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/cloud-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/cloud-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/custom-control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/custom-control.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/custom-marker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/custom-marker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/directions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/directions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/drawing-manager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/drawing-manager.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/dynamic-maps-engine-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/dynamic-maps-engine-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/fusion-tables-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/fusion-tables-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/heatmap-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/heatmap-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/info-window.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/info-window.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/kml-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/kml-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-data.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-lazy-load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-lazy-load.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map-type.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map_controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/map_controller.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/maps-engine-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/maps-engine-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/marker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/marker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/overlay-map-type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/overlay-map-type.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/places-auto-complete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/places-auto-complete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/shape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/shape.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/street-view-panorama.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/street-view-panorama.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/traffic-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/traffic-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/transit-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/transit-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/weather-layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/directives/weather-layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/gulpfile.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/road-trip.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/attr2_options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/attr2_options.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/geo_coder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/geo_coder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/navigator_geolocation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/navigator_geolocation.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/street_view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/services/street_view.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/map_controller_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/map_controller_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/map_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/map_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/marker_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/marker_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/shape_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/shape_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/street_view_panorama_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/directives/street_view_panorama_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/e2e/testapp_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/e2e/testapp_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/lib/angular-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/lib/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/lib/markerclusterer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/lib/markerclusterer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/attr2_options_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/attr2_options_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/geo_coder_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/geo_coder_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/navigator_geolocation_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/navigator_geolocation_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/street_view_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/spec/services/street_view_spec.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/USGSOverlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/USGSOverlay.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-rotate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/circle-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom-state.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-disableUI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-positioning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-control.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-current-location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-ng-repeat-panels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/drawing-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-arguments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-domlistener.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-properties.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/events_controller_as.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/groundoverlay-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/heatmap.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/hello_map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-complex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/images/beachflag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/images/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple-max.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_compile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_geolookup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-bicycling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-dynamic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-advanced.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-dynamicmapsengine.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-heatmap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-query.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-styling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-georss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-heatmap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml-features.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-mapsengine.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-style-event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-traffic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-transit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-weather.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/lib/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/lib/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/lib/angular.min.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-coordinates.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-geolocation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-load-params.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-load.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-projection-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_app.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_control.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_fit_bounds.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_geo_fallback_center.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_lazy_init.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_no_default_style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_address.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_current_position.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_address.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_center.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_zoom_to_include_markers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerkey.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image-overlay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-overlay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-complex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations-iteration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-clusterer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-remove.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-predefined.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_data_with_ng_repeat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_dynamic_raw.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_icon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_on_street_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_address.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_current_position.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_dynamic_address.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_dynamic_position.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_info_window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat_dynamic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_parent_controller.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/multiple_maps_on_a_page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-hideshow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-remove.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-animate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-arrow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-dashed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/places-auto-complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-arrays.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-autoclose.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-draggable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-complex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-remove.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/get-starbucks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/get-starbucks.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markerclusterer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markerclusterer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markerclusterer_packed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markerclusterer_packed.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/markers.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/quakes.geo.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/scripts/starbucks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_current_position.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_dynamic_address.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_with_ng_repeat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view_road_trip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/taxi-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/taxi-data.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-bootstrap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-router.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/user-editable-shapes.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css.map" afterPath="$PROJECT_DIR$/public/css/common.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css" afterPath="$PROJECT_DIR$/public/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.scss" afterPath="$PROJECT_DIR$/public/css/common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/index.html" afterPath="$PROJECT_DIR$/views/pages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/poistess.iml" afterPath="$PROJECT_DIR$/.idea/poistess.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poistess.iws" />
@@ -38,11 +414,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -52,7 +428,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="71" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -71,18 +447,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="material.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/material.scss">
+      <file leaf-file-name="angularMapModule.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/angularMapModule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5988372">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-material.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/angular-material/angular-material.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6273" column="21" selection-start-line="6273" selection-start-column="21" selection-end-line="6273" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -93,6 +479,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.125">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,9 +521,12 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/bower_components/angular-material/angular-material.js" />
+        <option value="$PROJECT_DIR$/public/js/app.min.js" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/views/pages/index.html" />
         <option value="$PROJECT_DIR$/public/css/common.scss" />
+        <option value="$PROJECT_DIR$/views/pages/index.html" />
+        <option value="$PROJECT_DIR$/public/js/angularMapModule.js" />
       </list>
     </option>
   </component>
@@ -161,12 +560,11 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,11 +593,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="svg" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,8 +615,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app.js" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMapModule.js" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poistess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -231,6 +714,8 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="HTML" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -274,6 +759,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -326,7 +817,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443286789478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Iconos SVG.">
+      <created>1443286859680</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1443286859680</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -342,43 +839,44 @@
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45298013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45178336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4344371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4331126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45298013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45178336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4332893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -404,19 +902,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4955947">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.031380754">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,6 +913,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19823788">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041265473">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36401674">
+          <caret line="625" column="16" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/material.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-material/angular-material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6273" column="21" selection-start-line="6273" selection-start-column="21" selection-end-line="6273" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-material/angular-material.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03125">
+          <caret line="17" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="22235" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-material/angular-material.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0625">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -446,7 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.min.js">
+    <entry file="file://$PROJECT_DIR$/public/js/angularMapModule.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -454,58 +1021,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/common.css">
+    <entry file="file://$PROJECT_DIR$/public/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.041265473">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36401674">
-          <caret line="625" column="16" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/directives/map-type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3451883">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="13" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/scripts/ng-map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.64016736">
-          <caret line="1578" column="73" selection-start-line="1578" selection-start-column="7" selection-end-line="1578" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/material.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -521,23 +1040,23 @@
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="71" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="29" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/public/js/angularMapModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.5988372">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
