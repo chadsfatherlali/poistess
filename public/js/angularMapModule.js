@@ -31,11 +31,10 @@ function parseGeoPoints ($http, $q, $log) {
 /**
  * Directiva que se encarga de renderizar el mapa
  *
- * @param $rootScope
  * @param parseGeoPoints
  * @returns {{restrict: string, scope: {mapPoints: string, mapHeight: string, mapWidth: string, mapZoom: string}, link: Function}}
  */
-function map ($rootScope, parseGeoPoints) {
+function map (parseGeoPoints) {
      return {
           restrict: 'E',
           scope: {
