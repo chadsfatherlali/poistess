@@ -109,7 +109,7 @@ function marker (parseGeoPoints, $rootScope) {
 /**
  * Modulo para Dibujar mapas con el API de google maps,
  * depende de la libreria de google
- * Link: https://maps.google.com/maps/api/js
+ * @link: https://maps.google.com/maps/api/js
  */
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
