@@ -15,12 +15,7 @@ app.set('view engine', 'html');
 app.set('view cache', false);
 
 app.get('/', function(request, response) {
-     var obj = {
-          'msg': 'Hola',
-          'name': 'Anni'
-     }
-
-     response.render('pages/index', obj);
+     response.render('pages/index');
 });
 
 app.listen(app.get('port'), function() {

@@ -34,7 +34,6 @@ function AppCtrl($scope, $mdSidenav, $mdUtil) {
                          'zoom': 7
                     },
                     {
-                         'localidad': 'Quito',
                          'tipo': 'Isla',
                          'local': 'TESS P1-K40',
                          'nombre': 'Quicentro Shopping',
@@ -45,7 +44,6 @@ function AppCtrl($scope, $mdSidenav, $mdUtil) {
                          'zoom': 7
                     },
                     {
-                         'localidad': 'Quito',
                          'tipo': 'Local',
                          'local': 'TESS J-54',
                          'nombre': 'Centro comercial el Recreo',

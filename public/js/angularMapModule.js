@@ -13,15 +13,32 @@
 function parseGeoPoints ($http, $q, $log) {
      return {
           parse: function (value) {
-               var deferred = $q.defer();
+               var regexp = /([0-9-.]+),([0-9-.]+)/,
+                    coords,
+                    data = {},
+                    deferred = $q.defer();
 
-               $http.get('https://maps.google.com/maps/api/geocode/json?address=' + value + '&sensor=false')
-                    .success(function (data) {
-                         deferred.resolve(data);
-                    })
-                    .error(function (msg, code) {
-                         $log.error(msg, code);
-                    });
+               if (regexp.test(value)) {
+                    coords = value.match(regexp);
+
+                    data.lat = parseFloat(coords[1]);
+                    data.lng = parseFloat(coords[2]);
+
+                    deferred.resolve(data);
+               }
+
+               else {
+                    $http.get('https://maps.google.com/maps/api/geocode/json?address=' + value + '&sensor=false')
+                         .success(function (data) {
+                              data.lat = data.results[0].geometry.location.lat;
+                              data.lng = data.results[0].geometry.location.lng;
+
+                              deferred.resolve(data);
+                         })
+                         .error(function (msg, code) {
+                              $log.error(msg, code);
+                         });
+               }
 
                return deferred.promise;
           }
@@ -49,6 +66,9 @@ function map (parseGeoPoints, $rootScope) {
           },
           transclude: true,
           link: function(scope, element, attrs, ctrl, transclude) {
+               $rootScope.markers = [];
+               $rootScope.infowindow = {};
+
                var height = scope.mapHeight || '300px',
                     width = scope.mapWidth || '500px',
                     zoom = scope.mapZoom || 7,
@@ -59,12 +79,10 @@ function map (parseGeoPoints, $rootScope) {
                el.style.width = width;
 
                parseGeoPoints.parse(scope.mapPoints).then(function (data) {
-                    var latlng = data.results;
-
                     $rootScope.map = new google.maps.Map(el, {
                          center: {
-                              lat: latlng[0].geometry.location.lat,
-                              lng: latlng[0].geometry.location.lng
+                              lat: data.lat,
+                              lng: data.lng
                          },
                          scrollwheel: true,
                          zoom: zoom
@@ -77,31 +95,46 @@ function map (parseGeoPoints, $rootScope) {
 }
 
 /**
- * Directiva que pinta los puntos en el mapa.
+ * Directiva que pinta los puntos en el mapa,
+ * si se pasa el atributo info con valor true(string) muestra
+ * la ventana de informacion que se define dentro de marker
+ * contenido por un div con la directiva ng-no-bindable
  *
  * @param parseGeoPoints
  * @param $rootScope
- * @returns {{restrict: string, scope: {markerPoints: string}, link: Function}}
+ * @param $interpolate
+ * @returns {{restrict: string, transclude: boolean, link: Function}}
  */
-function marker (parseGeoPoints, $rootScope) {
+function marker (parseGeoPoints, $rootScope, $interpolate) {
      return {
           restrict: 'E',
-          scope: {
-               markerPoints: '@points'
-          },
-          link: function(scope, element, attrs) {
-               parseGeoPoints.parse(scope.markerPoints).then(function (data) {
-                    var latlng = data.results;
+          transclude: true,
+          link: function (scope, element, attrs, ctrl, transclude) {
+               function setMarker () {
+                    parseGeoPoints.parse(attrs.points).then(function (data) {
+                         var marker = new google.maps.Marker({
+                              position: {
+                                   lat: data.lat,
+                                   lng: data.lng
+                              },
+                              map: $rootScope.map
+                         });
 
-                    $rootScope.marker = new google.maps.Marker({
-                         position: {
-                              lat: latlng[0].geometry.location.lat,
-                              lng: latlng[0].geometry.location.lng
-                         },
-                         map: $rootScope.map,
-                         title: 'Hello World!'
+                         if (attrs.info === 'true') {
+                              marker.addListener('click', function () {
+                                   var infowindow = new google.maps.InfoWindow(),
+                                        tr = transclude();
+
+                                   infowindow.setContent(scope.$eval($interpolate(tr[1].innerHTML)));
+                                   infowindow.open($rootScope.map, marker);
+                              });
+                         }
+
+                         $rootScope.markers.push(marker);
                     });
-               });
+               }
+
+               attrs.$observe('points', setMarker);
           }
      }
 }
@@ -114,4 +147,4 @@ function marker (parseGeoPoints, $rootScope) {
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
      .directive('map', ['parseGeoPoints', '$rootScope', map])
-     .directive('marker', ['parseGeoPoints', '$rootScope', marker]);
+     .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker])
