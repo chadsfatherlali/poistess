@@ -6,7 +6,8 @@
 
 var app = angular.module('StarterApp', [
      'ngMaterial',
-     'maps'
+     'maps',
+     'ngGeolocation'
 ]);
 
 app.config(['$interpolateProvider', function ($interpolateProvider) {
@@ -22,7 +23,7 @@ app.config(['$interpolateProvider', function ($interpolateProvider) {
  * @param $mdUtil
  * @constructor
  */
-function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window) {
+function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, MapsParseGeoPoints) {
      $scope.params = {};
      $scope.toggleRight = buildToggler('right');
 
@@ -150,6 +151,19 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window) {
           },
      ];
 
+     $geolocation.getCurrentPosition()
+          .then(function(position) {
+               console.log('Position:', position);
+               var geo = position.coords;
+
+               console.log('--->', MapsParseGeoPoints.parse(geo.latitude + ',' + geo.longitude));
+
+               /*parseGeoPoints.parse(geo.latitude + ',' + geo.longitude)
+                    .then(function (data) {
+                         console.log('data', data);
+                    });*/
+          });
+
      function buildToggler(navID) {
           var debounceFn = $mdUtil.debounce(function () {
                $mdSidenav(navID)
@@ -183,5 +197,23 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window) {
      };
 }
 
+function MapsParseGeoPoints (parseGeoPoints) {
+     return {
+          parse: function (value) {
+               return parseGeoPoints.parse(value);
+          }
+     }
+}
+
 app
-     .controller('AppCtrl', ['$rootScope', '$scope', '$mdSidenav', '$mdUtil', '$window', AppCtrl]);
+     .controller('AppCtrl', [
+          '$rootScope',
+          '$scope',
+          '$mdSidenav',
+          '$mdUtil',
+          '$window',
+          '$geolocation',
+          'MapsParseGeoPoints',
+          AppCtrl
+     ])
+     .factory('MapsParseGeoPoints', ['parseGeoPoints', MapsParseGeoPoints]);
