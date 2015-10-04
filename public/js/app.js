@@ -13,10 +13,17 @@ app.config(['$interpolateProvider', function ($interpolateProvider) {
      $interpolateProvider.startSymbol('[[').endSymbol(']]');
 }]);
 
-function AppCtrl($scope, $mdSidenav, $mdUtil) {
-     $scope.local = {};
-
-     $scope.toggleLeft = buildToggler('left');
+/**
+ * Controlador principal de la SPA
+ *
+ * @param $rootScope
+ * @param $scope
+ * @param $mdSidenav
+ * @param $mdUtil
+ * @constructor
+ */
+function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window) {
+     $scope.params = {};
      $scope.toggleRight = buildToggler('right');
 
      $scope.oficinas = [
@@ -156,14 +163,25 @@ function AppCtrl($scope, $mdSidenav, $mdUtil) {
 
      $scope.close = function () {
           $mdSidenav('right').close()
-               .then(function () {
-                    $log.debug("close LEFT is done");
-               });
+               .then(function () {});
      };
 
      $scope.buscar = function() {
           console.log('null');
-     }
+     };
+
+     $scope.fillForm = function (object) {
+          $scope.params.localidad = object.localidad;
+          $scope.params.centro = object.centro;
+     };
+
+     $window.sideopen = function (e) {
+          var object = eval('(' + angular.element(e).attr('object') + ')');
+
+          $scope.fillForm(object);
+          $scope.toggleRight();
+     };
 }
 
-app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdUtil', AppCtrl]);
+app
+     .controller('AppCtrl', ['$rootScope', '$scope', '$mdSidenav', '$mdUtil', '$window', AppCtrl]);

@@ -68,6 +68,7 @@ function map (parseGeoPoints, $rootScope) {
           link: function(scope, element, attrs, ctrl, transclude) {
                $rootScope.markers = [];
                $rootScope.infowindow = {};
+               $rootScope.infowindowsTemplate = {};
 
                var height = scope.mapHeight || '300px',
                     width = scope.mapWidth || '500px',
@@ -121,11 +122,13 @@ function marker (parseGeoPoints, $rootScope, $interpolate) {
                          });
 
                          if (attrs.info === 'true') {
-                              marker.addListener('click', function () {
-                                   var infowindow = new google.maps.InfoWindow(),
-                                        tr = transclude();
+                              var infowindow = new google.maps.InfoWindow(),
+                                   tr = transclude(),
+                                   template = scope.$eval($interpolate(tr[1].innerHTML));
 
-                                   infowindow.setContent(scope.$eval($interpolate(tr[1].innerHTML)));
+                              infowindow.setContent(template);
+
+                              marker.addListener('click', function (e) {
                                    infowindow.open($rootScope.map, marker);
                               });
                          }
@@ -147,4 +150,4 @@ function marker (parseGeoPoints, $rootScope, $interpolate) {
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
      .directive('map', ['parseGeoPoints', '$rootScope', map])
-     .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker])
+     .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker]);

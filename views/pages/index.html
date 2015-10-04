@@ -10,6 +10,7 @@
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/common.css" />
 
     <script src="https://maps.google.com/maps/api/js"></script>
@@ -19,8 +20,8 @@
     <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="/bower_components/angular-material/angular-material.min.js"></script>
 
-    <script src="/js/angularMapModule.js"></script>
-    <script src="/js/app.min.js"></script>
+    <script src="/js/angularMapModule{{ min }}.js"></script>
+    <script src="/js/app{{ min }}.js"></script>
 </head>
 
 <body ng-controller="AppCtrl">
@@ -30,17 +31,22 @@
 
     <map id="map" points="Ecuador" width="100%" height="100%">
         <div ng-repeat="oficina in oficinas">
-            <div ng-repeat="local in oficina.centros">
-                <marker info="true" points="[[ local.geo ]]">
-                    <div ng-non-bindable>
-                        <h2>[[ local.nombre ]]</h2>
-                        <div><strong>Direccion: </strong>[[ local.direccion ]]</div>
-                        <div><strong>Teléfono: </strong>[[ local.telefono ]]</div>
-                        <div><strong>Email: </strong>[[ local.email ]]</div>
-                        <div><strong>Tipo: </strong>[[ local.tipo ]]</div>
-                    </div>
-                </marker>
-            </div>
+            <marker ng-repeat="local in oficina.centros" info="true" points="[[ local.geo ]]">
+                <div>
+                    <h2>[[ local.nombre ]]</h2>
+                    <div><strong>Direccion: </strong>[[ local.direccion ]]</div>
+                    <div><strong>Teléfono: </strong>[[ local.telefono ]]</div>
+                    <div><strong>Email: </strong>[[ local.email ]]</div>
+                    <div><strong>Tipo: </strong>[[ local.tipo ]]</div>
+
+                    <footer>
+                        <h3>Como llegar:</h3>
+                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'run'}" class="md-fab md-warn material-icons" title="Indicaciones a pie">directions_run</md-button>
+                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'car'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte propio">directions_car</md-button>
+                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'bus'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte público">directions_bus</md-button>
+                    </footer>
+                </div>
+            </marker>
         </div>
     </map>
 
@@ -88,39 +94,41 @@
         </map>
     </div> -->
 
-    <!-- <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
         <div id="content-md-sidenav">
             <md-toolbar>
                 <md-button class="width-30 md-raised md-primary" ng-click="close()">Cerrar</md-button>
             </md-toolbar>
 
             <header class="padding-2">
-                <md-input-container flex>
-                    <label>Origen</label>
-                    <input ng-model="local.origen">
-                </md-input-container>
+                <form>
+                    <md-input-container flex>
+                        <label>Origen</label>
+                        <input ng-model="params.origen">
+                    </md-input-container>
 
-                <md-input-container>
-                    <label>Localidad</label>
-                    <md-select ng-model="local.localidad">
-                        <md-option value="[[ $index ]]" ng-repeat="oficina in oficinas">[[ oficina.localidad ]]</md-option>
-                    </md-select>
-                </md-input-container>
+                    <md-input-container>
+                        <label>Localidad</label>
+                        <md-select ng-model="params.localidad">
+                            <md-option value="[[ $index ]]" ng-repeat="oficina in oficinas">[[ oficina.localidad ]]</md-option>
+                        </md-select>
+                    </md-input-container>
 
-                <md-input-container>
-                    <label>Local</label>
-                    <md-select ng-model="local.centro">
-                        <md-option value="[[ centro.geo ]]" ng-repeat="centro in oficinas[local.localidad].centros">[[ centro.nombre ]]</md-option>
-                    </md-select>
-                </md-input-container>
+                    <md-input-container>
+                        <label>Local</label>
+                        <md-select ng-model="params.centro">
+                            <md-option value="[[ centro.geo ]]" ng-repeat="centro in oficinas[params.localidad].centros">[[ centro.nombre ]]</md-option>
+                        </md-select>
+                    </md-input-container>
 
-                <md-button class="md-raised md-primary" ng-click="buscar()">Buscar punto de venta</md-button>
+                    <md-button class="md-raised md-primary" ng-click="buscar()">Buscar punto de venta</md-button>
+                </form>
             </header>
-
-            <section>
+             [[ params|json ]]
+            <!-- <section>
                 <div id="directions-panel"></div>
-            </section>
+            </section> -->
         </div>
-    </md-sidenav> -->
+    </md-sidenav>
 </body>
 </html>

@@ -15,7 +15,11 @@ app.set('view engine', 'html');
 app.set('view cache', false);
 
 app.get('/', function(request, response) {
-     response.render('pages/index');
+     var obj = {
+          'min': request.headers.host === 'localhost:5000' ? '' : '.min',
+     }
+
+     response.render('pages/index', obj);
 });
 
 app.listen(app.get('port'), function() {
