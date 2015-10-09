@@ -14,6 +14,14 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.set('view cache', false);
 
+app.get('/', function(request, response) {
+     var obj = {
+          'min': request.headers.host === 'localhost:5000' ? '' : '.min',
+     }
+
+     response.render('pages/index', obj);
+});
+
 app.post('/', function(request, response) {
      var obj = {
           'min': request.headers.host === 'localhost:5000' ? '' : '.min',
