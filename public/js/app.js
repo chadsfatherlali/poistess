@@ -153,7 +153,7 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
      ];
 
      $geolocation.getCurrentPosition()
-          .then(function(position) {
+          .then(function (position) {
                var geo = position.coords;
 
                parseGeoPoints.parse(geo.latitude + ',' + geo.longitude, true).then(function (data) {
@@ -161,7 +161,7 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
                });
           });
 
-     function buildToggler(navID) {
+     function buildToggler (navID) {
           var debounceFn = $mdUtil.debounce(function () {
                $mdSidenav(navID)
                     .toggle()
@@ -177,7 +177,7 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
                .then(function () {});
      };
 
-     $scope.buscar = function() {
+     $scope.buscar = function () {
           if ($scope.params
                && $scope.params.origen
                && $scope.params.centro) {
