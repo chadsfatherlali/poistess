@@ -189,10 +189,6 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
           $scope.params.localidad = object.localidad;
           $scope.params.centro = object.centro;
 
-          /** TODO: No olvidarme de quitarlo  */
-          $scope.params.origen = 'Polit Lasso, Conocoto, Ecuador';
-          /******************************************************/
-
           directionsDisplay.calculate($scope.params.origen, $scope.params.centro, object.tipo, $scope.messasgeFail);
      };
 
