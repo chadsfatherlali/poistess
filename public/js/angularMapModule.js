@@ -55,7 +55,7 @@ function parseGeoPoints ($http, $q, $log) {
 function directionsDisplay ($rootScope) {
      return {
           calculate: function (origin, destination, travelMode, FailMessage) {
-               var travel = travelMode ||'DRIVING',
+               var travel = travelMode || 'DRIVING',
                     message = FailMessage || 'Directions request failed';
 
                $rootScope.directionsService.route({
