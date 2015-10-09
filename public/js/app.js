@@ -23,7 +23,7 @@ app.config(['$interpolateProvider', function ($interpolateProvider) {
  * @param $mdUtil
  * @constructor
  */
-function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, MapsParseGeoPoints) {
+function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, parseGeoPoints, directionsDisplay) {
      $scope.params = {};
      $scope.toggleRight = buildToggler('right');
 
@@ -153,15 +153,11 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
 
      $geolocation.getCurrentPosition()
           .then(function(position) {
-               console.log('Position:', position);
                var geo = position.coords;
 
-               console.log('--->', MapsParseGeoPoints.parse(geo.latitude + ',' + geo.longitude));
-
-               /*parseGeoPoints.parse(geo.latitude + ',' + geo.longitude)
-                    .then(function (data) {
-                         console.log('data', data);
-                    });*/
+               parseGeoPoints.parse(geo.latitude + ',' + geo.longitude, true).then(function (data) {
+                    $scope.params.origen = data.address;
+               });
           });
 
      function buildToggler(navID) {
@@ -187,6 +183,12 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
      $scope.fillForm = function (object) {
           $scope.params.localidad = object.localidad;
           $scope.params.centro = object.centro;
+
+          console.log($scope.params.origen);
+          console.log($scope.params.centro);
+
+          $scope.params.origen = 'Polit Lasso, Conocoto, Ecuador';
+          directionsDisplay.calculate($scope.params.origen, $scope.params.centro);
      };
 
      $window.sideopen = function (e) {
@@ -197,14 +199,6 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
      };
 }
 
-function MapsParseGeoPoints (parseGeoPoints) {
-     return {
-          parse: function (value) {
-               return parseGeoPoints.parse(value);
-          }
-     }
-}
-
 app
      .controller('AppCtrl', [
           '$rootScope',
@@ -213,7 +207,7 @@ app
           '$mdUtil',
           '$window',
           '$geolocation',
-          'MapsParseGeoPoints',
+          'parseGeoPoints',
+          'directionsDisplay',
           AppCtrl
-     ])
-     .factory('MapsParseGeoPoints', ['parseGeoPoints', MapsParseGeoPoints]);
+     ]);

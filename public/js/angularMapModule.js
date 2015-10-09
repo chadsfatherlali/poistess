@@ -12,13 +12,13 @@
  */
 function parseGeoPoints ($http, $q, $log) {
      return {
-          parse: function (value) {
+          parse: function (value, forceApi) {
                var regexp = /([0-9-.]+),([0-9-.]+)/,
                     coords,
                     data = {},
                     deferred = $q.defer();
 
-               if (regexp.test(value)) {
+               if (regexp.test(value) && !forceApi) {
                     coords = value.match(regexp);
 
                     data.lat = parseFloat(coords[1]);
@@ -30,6 +30,7 @@ function parseGeoPoints ($http, $q, $log) {
                else {
                     $http.get('https://maps.google.com/maps/api/geocode/json?address=' + value + '&sensor=false')
                          .success(function (data) {
+                              data.address = data.results[0].formatted_address;
                               data.lat = data.results[0].geometry.location.lat;
                               data.lng = data.results[0].geometry.location.lng;
 
@@ -41,6 +42,27 @@ function parseGeoPoints ($http, $q, $log) {
                }
 
                return deferred.promise;
+          }
+     }
+}
+
+function directionsDisplay ($rootScope) {
+     return {
+          calculate: function (origin, destination) {
+               $rootScope.directionsService.route({
+                    origin: origin,
+                    destination: destination,
+                    travelMode: google.maps.TravelMode.DRIVING
+               },
+                    function(response, status) {
+                         if (status === google.maps.DirectionsStatus.OK) {
+                              $rootScope.directionsDisplay.setDirections(response);
+                         }
+
+                         else {
+                              window.alert('Directions request failed due to ' + status);
+                         }
+                    });
           }
      }
 }
@@ -69,6 +91,8 @@ function map (parseGeoPoints, $rootScope) {
                $rootScope.markers = [];
                $rootScope.infowindow = {};
                $rootScope.infowindowsTemplate = {};
+               $rootScope.directionsService = new google.maps.DirectionsService;
+               $rootScope.directionsDisplay = new google.maps.DirectionsRenderer;
 
                var height = scope.mapHeight || '300px',
                     width = scope.mapWidth || '500px',
@@ -89,6 +113,7 @@ function map (parseGeoPoints, $rootScope) {
                          zoom: zoom
                     });
 
+                    $rootScope.directionsDisplay.setMap($rootScope.map);
                     element.append(transclude());
                });
           }
@@ -149,5 +174,6 @@ function marker (parseGeoPoints, $rootScope, $interpolate) {
  */
 angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
+     .factory('directionsDisplay', ['$rootScope', directionsDisplay])
      .directive('map', ['parseGeoPoints', '$rootScope', map])
      .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker]);
