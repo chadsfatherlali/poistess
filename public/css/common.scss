@@ -50,3 +50,15 @@ md-sidenav {
   min-width: 40% !important;
   max-width: 40% !important;
 }
+
+.icon-directions {
+  position: relative;
+  top: 6px;
+}
+.md-backdrop.md-opaque {
+  background-color: rgba(33,33,33,0.3) !important;
+}
+
+#paneldirections {
+  padding: 1em;
+}

@@ -46,13 +46,22 @@ function parseGeoPoints ($http, $q, $log) {
      }
 }
 
+/**
+ * Funcion encargada de dibujar la ruta más adecuada entro los puntos
+ *
+ * @param $rootScope
+ * @returns {{calculate: Function}}
+ */
 function directionsDisplay ($rootScope) {
      return {
-          calculate: function (origin, destination) {
+          calculate: function (origin, destination, travelMode, FailMessage) {
+               var travel = travelMode ||'DRIVING',
+                    message = FailMessage || 'Directions request failed';
+
                $rootScope.directionsService.route({
                     origin: origin,
                     destination: destination,
-                    travelMode: google.maps.TravelMode.DRIVING
+                    travelMode: google.maps.TravelMode[travel]
                },
                     function(response, status) {
                          if (status === google.maps.DirectionsStatus.OK) {
@@ -60,7 +69,7 @@ function directionsDisplay ($rootScope) {
                          }
 
                          else {
-                              window.alert('Directions request failed due to ' + status);
+                              window.alert(message);
                          }
                     });
           }
@@ -168,6 +177,49 @@ function marker (parseGeoPoints, $rootScope, $interpolate) {
 }
 
 /**
+ * Directivaa que se encarga de crgar el autocomplete de google maps
+ * a una etiqueta input
+ *
+ * options => atributo disponible para configurar restriccion de pais, etc.
+ *
+ * options="{types: ['geocode'], componentRestrictions: {country: 'ec'}}"
+ *
+ * Nota: es necesario cargar la libreria de places 'https://maps.google.com/maps/api/js?libraries=places'
+ *
+ * @param $rootScope
+ * @returns {{restrict: string, scope: {mapOptions: string}, link: Function}}
+ */
+function autocompletebox ($rootScope) {
+     return {
+          restrict: 'AEC',
+          scope: {
+               mapOptions: '@options'
+          },
+          link: function (scope, element, attrs, ctrl) {
+               var options = scope.$eval(scope.mapOptions) || {};
+
+               $rootScope.InitAutoCompleteBox = new google.maps.places.Autocomplete(element[0], options);
+          }
+     }
+}
+
+/**
+ * Directiva que pinta el cuadro de direcciones
+ * entre dos puntos
+ *
+ * @param $rootScope
+ * @returns {{restrict: string, link: Function}}
+ */
+function directionspanel ($rootScope) {
+     return {
+          restrict: 'AEC',
+          link: function (scope, element, attrs, ctrl) {
+               $rootScope.directionsDisplay.setPanel(element[0]);
+          }
+     }
+}
+
+/**
  * Modulo para Dibujar mapas con el API de google maps,
  * depende de la libreria de google
  * @link: https://maps.google.com/maps/api/js
@@ -176,4 +228,6 @@ angular.module('maps', [])
      .factory('parseGeoPoints', ['$http', '$q', '$log', parseGeoPoints])
      .factory('directionsDisplay', ['$rootScope', directionsDisplay])
      .directive('map', ['parseGeoPoints', '$rootScope', map])
-     .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker]);
+     .directive('marker', ['parseGeoPoints', '$rootScope', '$interpolate', marker])
+     .directive('autocompletebox', ['$rootScope', autocompletebox])
+     .directive('directionspanel', ['$rootScope', directionspanel]);

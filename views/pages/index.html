@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/common.css" />
 
-    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="https://maps.google.com/maps/api/js?libraries=places"></script>
     <script src="/bower_components/underscore/underscore-min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
@@ -42,58 +42,14 @@
 
                     <footer>
                         <h3>Como llegar:</h3>
-                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'run'}" class="md-fab md-warn material-icons" title="Indicaciones a pie">directions_run</md-button>
-                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'car'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte propio">directions_car</md-button>
-                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'bus'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte público">directions_bus</md-button>
+                        <!-- <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'run'}" class="md-fab md-warn material-icons" title="Indicaciones a pie">directions_run</md-button> -->
+                        <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'DRIVING'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte propio">directions_car</md-button>
+                        <!-- <md-button onclick="sideopen(this)" object="{localidad: '[[ $parent.$index ]]', centro: '[[ local.geo ]]', tipo: 'TRANSIT'}" class="md-fab md-warn material-icons" title="Indicaciones en transporte público">directions_bus</md-button> -->
                     </footer>
                 </div>
             </marker>
         </div>
     </map>
-
-    <!-- <div id="map" map-lazy-load="http://maps.google.com/maps/api/js" map-type="">
-        <map zoom="7" center="-1.7864639, -78.1368874">
-            <div ng-repeat="oficina in oficinas">
-                 <div ng-repeat="local in oficina.centros">
-                     <marker id="oficina-[[ local.telefono ]]"  position="[[ local.geo ]]" on-click="showInfoWindow(event, 'info-[[ local.telefono ]]')"></marker>
-                     <info-window id="info-[[ local.telefono ]]" visible-on-marker="oficina-[[ local.telefono ]]">
-                         <div ng-non-bindable="">
-                             <header>
-                                 <h2>[[ local.nombre ]]</h2>
-                                 <h3>[[ local.localidad ]]</h3>
-                             </header>
-                             <section>
-                                 <div><strong>Nombre:</strong> [[ local.nombre ]]</div>
-                                 <div><strong>Dirección:</strong> [[ local.direccion ]]</div>
-                                 <div><strong>Teléfono:</strong> [[ local.telefono ]]</div>
-                                 <div><strong>Email:</strong> [[ local.email ]]</div>
-                             </section>
-                             <footer>
-                                 <h3>Como llegar:</h3>
-                                 <md-button class="md-fab md-warn" aria-label="Use Android">
-                                     <md-icon md-svg-src="/svg/bicycle.svg"></md-icon>
-                                 </md-button>
-                                 <md-button class="md-fab md-warn" aria-label="Use Android">
-                                     <md-icon md-svg-src="/svg/bus.svg"></md-icon>
-                                 </md-button>
-                                 <md-button class="md-fab md-warn" aria-label="Use Android">
-                                     <md-icon md-svg-src="/svg/car.svg"></md-icon>
-                                 </md-button>
-                            </footer>
-                         </div>
-                     </info-window>
-                 </div>
-            </div>
-
-            <directions
-                    draggable="true"
-                    panel="directions-panel"
-                    travel-mode="DRIVING"
-                    origin="[[ local.origen ]]"
-                    destination="[[ local.centro ]]">
-            </directions>
-        </map>
-    </div> -->
 
     <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
         <div id="content-md-sidenav">
@@ -105,7 +61,10 @@
                 <form>
                     <md-input-container flex>
                         <label>Origen</label>
-                        <input ng-model="params.origen">
+                        <input ng-model="params.origen" options="{
+                            types: ['geocode'],
+                            componentRestrictions: {country: 'ec'}
+                        }" autocompletebox>
                     </md-input-container>
 
                     <md-input-container>
@@ -122,13 +81,13 @@
                         </md-select>
                     </md-input-container>
 
-                    <md-button class="md-raised md-primary" ng-click="buscar()">Buscar punto de venta</md-button>
+                    <md-button class="md-raised md-primary" ng-click="buscar()">Trazar ruta <span class="icon-directions material-icons">directions_directions</span></md-button>
                 </form>
             </header>
-             [[ params|json ]]
-            <!-- <section>
-                <div id="directions-panel"></div>
-            </section> -->
+
+            <footer id="paneldirections">
+                <directionspanel></directionspanel>
+            </footer>
         </div>
     </md-sidenav>
 </body>

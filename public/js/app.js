@@ -24,6 +24,7 @@ app.config(['$interpolateProvider', function ($interpolateProvider) {
  * @constructor
  */
 function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, parseGeoPoints, directionsDisplay) {
+     $scope.messasgeFail = 'Lo sentimos no hemos podido encontrar una ruta adecuada, por favor revisa tu dirección';
      $scope.params = {};
      $scope.toggleRight = buildToggler('right');
 
@@ -177,18 +178,22 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
      };
 
      $scope.buscar = function() {
-          console.log('null');
+          if ($scope.params
+               && $scope.params.origen
+               && $scope.params.centro) {
+               directionsDisplay.calculate($scope.params.origen, $scope.params.centro, 'DRIVING', $scope.messasgeFail);
+          }
      };
 
      $scope.fillForm = function (object) {
           $scope.params.localidad = object.localidad;
           $scope.params.centro = object.centro;
 
-          console.log($scope.params.origen);
-          console.log($scope.params.centro);
-
+          /** TODO: No olvidarme de quitarlo  */
           $scope.params.origen = 'Polit Lasso, Conocoto, Ecuador';
-          directionsDisplay.calculate($scope.params.origen, $scope.params.centro);
+          /******************************************************/
+
+          directionsDisplay.calculate($scope.params.origen, $scope.params.centro, object.tipo, $scope.messasgeFail);
      };
 
      $window.sideopen = function (e) {
@@ -197,6 +202,8 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
           $scope.fillForm(object);
           $scope.toggleRight();
      };
+
+     $rootScope.InitAutoCompleteBox;
 }
 
 app
