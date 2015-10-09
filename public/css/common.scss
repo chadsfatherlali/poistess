@@ -65,4 +65,8 @@ md-sidenav {
 
 #menu-cerrar {
   top: 9px;
+  span {
+    position: relative;
+    top: 8px;
+  }
 }
