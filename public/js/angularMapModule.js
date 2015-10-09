@@ -162,7 +162,7 @@ function marker (parseGeoPoints, $rootScope, $interpolate) {
 
                               infowindow.setContent(template);
 
-                              marker.addListener('click touchstart', function (e) {
+                              marker.addListener('mousedown', function (e) {
                                    infowindow.open($rootScope.map, marker);
                               });
                          }
