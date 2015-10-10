@@ -167,6 +167,10 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
                          if (response.status === 'connected') {
                               fbGetInformation();
                          }
+
+                         else {
+                              getGeoLocation();
+                         }
                     },
                     {
                          scope: 'user_about_me,user_location,public_profile'
