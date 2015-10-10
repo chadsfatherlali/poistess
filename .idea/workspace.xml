@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e13e4e5-a001-4a16-9863-d533be8095bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,8 +49,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17158177">
-              <caret line="171" column="44" selection-start-line="171" selection-start-column="44" selection-end-line="171" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6246649">
+              <caret line="212" column="33" selection-start-line="212" selection-start-column="33" selection-end-line="212" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -916,7 +915,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444494075014</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Se agrego la libreria de Facebook">
+      <created>1444494339208</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1444494339208</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1281,8 +1286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17158177">
-          <caret line="171" column="44" selection-start-line="171" selection-start-column="44" selection-end-line="171" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.6246649">
+          <caret line="212" column="33" selection-start-line="212" selection-start-column="33" selection-end-line="212" selection-end-column="33" />
           <folding />
         </state>
       </provider>
