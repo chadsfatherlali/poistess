@@ -249,6 +249,8 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
           $scope.params.localidad = object.localidad;
           $scope.params.centro = object.centro;
 
+          $scope.params.origen = $scope.params.origen || 'Quito, Pichincha, Ecuador';
+
           directionsDisplay.calculate($scope.params.origen, $scope.params.centro, object.tipo, $scope.messasgeFail);
      };
 
