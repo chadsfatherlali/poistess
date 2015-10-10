@@ -176,7 +176,6 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
 
      function fbGetInformation () {
           Facebook.api('/me?fields=email,name,location,picture', function (response) {
-               console.log('DEV', response);
                if (response && response.location.name) {
                     $scope.params.origen = response.location.name;
 
