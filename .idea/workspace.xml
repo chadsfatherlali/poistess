@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e13e4e5-a001-4a16-9863-d533be8095bf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook-phonegap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook-phonegap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/gulpfile.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/testapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/karma.conf.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/protractor.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-facebook/protractor.config.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css.map" afterPath="$PROJECT_DIR$/public/css/common.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css" afterPath="$PROJECT_DIR$/public/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.scss" afterPath="$PROJECT_DIR$/public/css/common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/index.html" afterPath="$PROJECT_DIR$/views/pages/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poistess.iws" />
@@ -40,8 +60,8 @@
       <file leaf-file-name="common.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77363896">
-              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+            <state vertical-scroll-proportion="1.7621777">
+              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -50,8 +70,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.62963">
-              <caret line="74" column="53" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="53" />
+            <state vertical-scroll-proportion="-5.6296296">
+              <caret line="187" column="50" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-facebook.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="277" column="54" selection-start-line="277" selection-start-column="54" selection-end-line="277" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -80,8 +110,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.72549">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state vertical-scroll-proportion="-6.1960783">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -150,8 +180,8 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/bower_components/ngGeolocation/ngGeolocation.min.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/public/js/angularMapModule.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/views/pages/index.html" />
         <option value="$PROJECT_DIR$/public/css/common.scss" />
       </list>
@@ -888,7 +918,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444432601749</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Se implento la libreria externa de ngGeolocation">
+      <created>1444432723297</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1444432723297</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -914,7 +950,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30860928" sideWeight="0.49753347" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.50463575" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30860928" sideWeight="0.5024665" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4331126" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4331126" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1190,36 +1226,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="134" selection-start-line="0" selection-start-column="134" selection-end-line="0" selection-end-column="134" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angularMapModule.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.62963">
-          <caret line="74" column="53" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1234,18 +1244,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="277" column="54" selection-start-line="277" selection-start-column="54" selection-end-line="277" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="134" selection-start-line="0" selection-start-column="134" selection-end-line="0" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6296296">
+          <caret line="187" column="50" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.72549">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        <state vertical-scroll-proportion="-6.1960783">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77363896">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+        <state vertical-scroll-proportion="1.7621777">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding />
         </state>
       </provider>

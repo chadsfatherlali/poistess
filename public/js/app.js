@@ -7,12 +7,17 @@
 var app = angular.module('StarterApp', [
      'ngMaterial',
      'maps',
-     'ngGeolocation'
+     'ngGeolocation',
+     'facebook'
 ]);
 
-app.config(['$interpolateProvider', function ($interpolateProvider) {
-     $interpolateProvider.startSymbol('[[').endSymbol(']]');
-}]);
+app.config([
+     '$interpolateProvider',
+     'FacebookProvider',
+     function ($interpolateProvider, FacebookProvider) {
+          FacebookProvider.init('661292413991564');
+          $interpolateProvider.startSymbol('[[').endSymbol(']]');
+     }]);
 
 /**
  * Controlador principal de la SPA
@@ -23,7 +28,7 @@ app.config(['$interpolateProvider', function ($interpolateProvider) {
  * @param $mdUtil
  * @constructor
  */
-function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, parseGeoPoints, directionsDisplay) {
+function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation, parseGeoPoints, directionsDisplay, Facebook) {
      $scope.messasgeFail = 'Lo sentimos no hemos podido encontrar una ruta adecuada, por favor revisa tu dirección';
      $scope.params = {};
      $scope.toggleRight = buildToggler('right');
@@ -152,14 +157,66 @@ function AppCtrl($rootScope, $scope, $mdSidenav, $mdUtil, $window, $geolocation,
           },
      ];
 
-     $geolocation.getCurrentPosition()
-          .then(function (position) {
-               var geo = position.coords;
+     Facebook.getLoginStatus(function (response) {
+          if (response.status === 'connected') {
+               fbGetInformation();
+          }
 
-               parseGeoPoints.parse(geo.latitude + ',' + geo.longitude, true).then(function (data) {
-                    $scope.params.origen = data.address;
-               });
+          else {
+               Facebook.login(function (response) {
+                         if (response.status === 'connected') {
+                              fbGetInformation();
+                         }
+                    },
+                    {
+                         scope: 'user_about_me,user_location,public_profile'
+                    });
+          }
+     });
+
+     function fbGetInformation () {
+          Facebook.api('/me?fields=email,name,location,picture', function (response) {
+               console.log('DEV', response);
+               if (response && response.location.name) {
+                    $scope.params.origen = response.location.name;
+
+                    if (response.picture.data.url) {
+                         $scope.params.picture = response.picture.data.url;
+                    }
+
+                    if (response.name) {
+                         $scope.params.name = response.name;
+                    }
+               }
+
+               else if (response && response.picture.data.url) {
+                    $scope.params.picture = response.picture.data.url;
+
+                    if (response.name) {
+                         $scope.params.name = response.name;
+                    }
+               }
+
+               else if (response.name) {
+                    $scope.params.name = response.name;
+               }
+
+               else {
+                    getGeoLocation();
+               }
           });
+     }
+
+     function getGeoLocation () {
+          $geolocation.getCurrentPosition()
+               .then(function (position) {
+                    var geo = position.coords;
+
+                    parseGeoPoints.parse(geo.latitude + ',' + geo.longitude, true).then(function (data) {
+                         $scope.params.origen = data.address;
+                    });
+               });
+     }
 
      function buildToggler (navID) {
           var debounceFn = $mdUtil.debounce(function () {
@@ -212,5 +269,6 @@ app
           '$geolocation',
           'parseGeoPoints',
           'directionsDisplay',
+          'Facebook',
           AppCtrl
      ]);

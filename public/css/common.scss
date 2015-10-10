@@ -65,7 +65,7 @@ md-sidenav {
 }
 
 #paneldirections {
-  padding: 1em;
+  padding: 2em;
 }
 
 #menu-cerrar {
@@ -73,5 +73,8 @@ md-sidenav {
   span.material-icons {
     position: relative;
     top: 8px;
+  }
+  @media screen and (max-width: 500px) {
+    top: 0px;
   }
 }

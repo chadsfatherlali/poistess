@@ -2,8 +2,8 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/subheader/subheader.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/fabActions/fabActions.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/subheader/subheader.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/datepicker/datepicker.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/textField/textField.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/fabToolbar/fabToolbar.min.js" />
@@ -34,8 +34,8 @@
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/switch/switch.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/sticky/sticky.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/sidenav/sidenav.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/slider/slider.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menuBar/menuBar.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/slider/slider.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/select/select.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/backdrop/backdrop.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/tooltip/tooltip.min.js" />
@@ -49,11 +49,11 @@
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/sidenav/sidenav.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/checkbox/checkbox.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/menuBar/menuBar.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/backdrop/backdrop.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/menuBar/menuBar.min.js" />
         <item url="file://$PROJECT_DIR$/public/js/app.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/underscore/underscore.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/core/core.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/underscore/underscore.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/underscore/underscore-min.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/select/select.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/slider/slider.min.js" />
@@ -69,8 +69,8 @@
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/swipe/swipe.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/index.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/angular-material-mocks.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/input/input.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/input/input.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/input/input.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/toast/toast.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/swipe/swipe.min.js" />
@@ -85,13 +85,18 @@
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/dialog/dialog.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/chips/chips.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/list/list.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-facebook/protractor.config.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook-phonegap.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/virtualRepeat/virtualRepeat.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-facebook/karma.conf.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-facebook/gulpfile.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menu/menu.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/tabs/tabs.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/progressLinear/progressLinear.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/core.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/default-theme.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/core.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/core/default-theme.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/textField/textField.min.js" />
@@ -380,8 +385,8 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/list/list.min.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/chips/chips.min.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menu/menu.min.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/fabActions/fabActions.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/subheader/subheader.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/fabActions/fabActions.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/datepicker/datepicker.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/fabToolbar/fabToolbar.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/textField/textField.min.js" />
@@ -412,8 +417,8 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/switch/switch.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/sticky/sticky.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/sidenav/sidenav.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menuBar/menuBar.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/slider/slider.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menuBar/menuBar.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/select/select.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/tooltip/tooltip.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/backdrop/backdrop.min.js" />
@@ -427,11 +432,11 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular-animate/angular-animate.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/checkbox/checkbox.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/backdrop/backdrop.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/menuBar/menuBar.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/backdrop/backdrop.min.js" />
       <root url="file://$PROJECT_DIR$/public/js/app.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/core/core.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/underscore/underscore.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/core/core.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/underscore/underscore-min.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/select/select.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/slider/slider.min.js" />
@@ -447,8 +452,8 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/swipe/swipe.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/index.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/angular-material-mocks.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/input/input.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/input/input.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/toast/toast.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/swipe/swipe.min.js" />
@@ -463,13 +468,18 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/dialog/dialog.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/chips/chips.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/list/list.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-facebook/protractor.config.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/virtualRepeat/virtualRepeat.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook-phonegap.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-facebook/karma.conf.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-facebook/lib/angular-facebook.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-facebook/gulpfile.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/menu/menu.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/tabs/tabs.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/progressLinear/progressLinear.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/default-theme.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/core.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/core/default-theme.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/core/default-theme.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/closure/textField/textField.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.js" />

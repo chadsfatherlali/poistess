@@ -20,6 +20,7 @@
     <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="/bower_components/angular-material/angular-material.min.js"></script>
     <script src="/bower_components/ngGeolocation/ngGeolocation.min.js"></script>
+    <script src="/bower_components/angular-facebook/lib/angular-facebook.min.js"></script>
 
     <script src="/js/angularMapModule{{ min }}.js"></script>
     <script src="/js/app{{ min }}.js"></script>
@@ -85,8 +86,10 @@
                 </form>
             </header>
 
-            <footer id="paneldirections">
-                <directionspanel></directionspanel>
+            <footer>
+                <div id="paneldirections">
+                    <directionspanel></directionspanel>
+                </div>
             </footer>
         </div>
     </md-sidenav>
